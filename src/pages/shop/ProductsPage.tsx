@@ -15,7 +15,7 @@ export function ProductsPage() {
 
     useEffect(() => {
         fetchProducts()
-    }, [])
+    }, [fetchProducts])
 
     const handleAddToBasket = useCallback(
         (product: Product) => {

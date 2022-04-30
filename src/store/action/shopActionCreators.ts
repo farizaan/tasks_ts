@@ -19,7 +19,7 @@ type ThunkProductType = ThunkAction<void, IState, unknown, ProductAction>;
 export const fetchProducts = (): ThunkProductType => (dispatch) => {
 	dispatch(fetchProductAction());
 	axios
-		.get(`https://fakestoreapi.com/products`)
+		.get<Product[]>(`https://fakestoreapi.com/products`)
 		.then((res) => {
 			dispatch({
 				type: ProductActionTypes.FETCH_PRODUCTS_SUCCESS,

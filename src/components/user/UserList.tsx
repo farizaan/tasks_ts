@@ -11,7 +11,7 @@ export function UserList() {
     const { fetchUsers } = useActions(userActionCreators)
     useEffect(() => {
         fetchUsers()
-    }, [])
+    }, [fetchUsers])
 
 
     if (loading) {
