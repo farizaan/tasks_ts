@@ -25,6 +25,10 @@ const pages = [
   {
     title: "Shop",
     link: "/shop",
+  }, 
+  {
+    title: "Tasks",
+    link: "/tasks",
   },
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
